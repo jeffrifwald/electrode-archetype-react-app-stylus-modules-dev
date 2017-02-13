@@ -25,7 +25,7 @@ module.exports = function (babel) {
               "babel-loader"
             ].filter(_.identity),
             query: babel
-          }, archetype.webpack.babelLoader),
+          }, archetype.webpack.extendBabelLoader),
           {
             name: "json",
             test: /\.json$/,
